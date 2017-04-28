@@ -7,10 +7,63 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="idadedecachorro.cursoandroid.com.idadedecachorro.MainActivity">
+    tools:context="idadedecachorro.cursoandroid.com.idadedecachorro.MainActivity"
+    android:background="#00b9d5">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cachorro" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/caixaTextoId"
+        android:background="#ffffff"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Degite a idade do seu cachorro, para descobrir a idade dele em anos humanos"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#4fc4d6"
+        android:textColor="#ffffff"
+        android:padding="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descobrir_idade"
+        android:id="@+id/botaoIdadeId"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/caixaTextoId"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/resultadoIdadeId"
+        android:layout_below="@+id/botaoIdadeId"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff" />
 </RelativeLayout>
